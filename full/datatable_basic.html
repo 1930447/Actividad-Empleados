@@ -403,29 +403,47 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Departamentos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-
-								<li class="nav-item"><a href="form_actions.html" class="nav-link">Form actions</a></li>
-
 								
+								<li class="nav-item"><a href="form_actions.html" class="nav-link active">Tabla</a></li>
+								<li class="nav-item"><a href="form_actions.html" class="nav-link active">Registrar</a></li>
+								<li class="nav-item"><a href="form_actions.html" class="nav-link active">Editar</a></li>
+							
 							</ul>
 						</li>
 
-					
 
 					
 
 						<!-- Tables -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Empleados </div> <i class="icon-menu" title="Tables"></i></li>
+
 
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Data tables</span></a>
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Empleados</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Basic initialization</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Tabla</a></li>
+
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Registrar</a></li>
+
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Editar</a></li>
+
+
+
+
+						
+
+
+
+
+
+
 								
 						<!-- /tables -->
+
+
 
 
 
@@ -446,7 +464,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Datatables</span> - Basic</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tabla</span> - Empleados</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -459,9 +477,7 @@
 					</div>
 				</div>
 
-
-<¡
-				
+<div class="content">			
 				<!-- Basic datatable -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
@@ -577,7 +593,88 @@
 								<td>Fengming@outlook.com</td>
 
 								</td>
+
 							</tr>
+
+
+				<!-- Form action components -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Registrar Empleados
+
+
+					</h6>
+
+
+				<div class="row">
+					<div class="col-md-4">
+			        	
+	                	<!-- Left aligned buttons -->
+			            <div class="card">
+							<div class="card-header header-elements-inline">
+				                <h6 class="card-title">Registrar nuevo empleado</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+			                <div class="card-body">
+			                	<form action="#">
+									<div class="form-group">
+										<label> Nombre :</label>
+										<input type="text" class="form-control" placeholder="Eugene Kopyov">
+									</div>
+
+									<div class="form-group">
+										<label>Apellidos:</label>
+										<input type="password" class="form-control" placeholder="Your strong password">
+									</div>
+
+									 <div class="form-group">
+										<label>Edad:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+									<div class="form-group">
+										<label>Pais:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+									<div class="form-group">
+										<label>Departamentos:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+									<div class="form-group">
+										<label>Habilidades:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+ 								    <div class="form-group">
+										<label>Especialidad:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+								     <div class="form-group">
+										<label>correo electronico:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+
+									<div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Cancelar</button>
+										<button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</form>
+							</div>
+		                </div>
+		                <!-- /left aligned buttons -->
+
+
 
 
 
