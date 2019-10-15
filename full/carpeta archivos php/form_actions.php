@@ -23,11 +23,12 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_actions.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -400,23 +401,9 @@
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
-						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menu</div> <i class="icon-menu" title="Main"></i></li>
-						<li class="nav-item">
-							<a href="index.html" class="nav-link active">
-								<i class="icon-home4"></i>
-								<span>
-									Graficas
-								</span>
-							</a>
-						</li>
 
 
-						<!-- /main -->						
-
-
-
-												<!-- Forms -->
+						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Departamentos</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Departamentos</span></a>
@@ -428,6 +415,8 @@
 							
 							</ul>
 						</li>
+						
+						<!-- /forms -->
 
 						<!-- Extensions -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Empresas</div> <i class="icon-menu" title="Extensions"></i></li>
@@ -440,11 +429,12 @@
 
 						<!-- /extensions -->
 
+					
 
 
 
 						<!-- Tables -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Empleados </div> <i class="icon-menu" title="Tables"></i></li>
+						<li class="nav-item-header"><div class="t-uppercase font-size-xs line-height-xs">Empleados </div> <i class="icon-menu" title="Tables"></i></li>
 
 
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
@@ -457,27 +447,13 @@
 								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Editar</a></li>
 								<li class="nav-item"><a href="datatable_styling.html" class="nav-link active">Vacaciones</a></li>
 
-
-
-
-
-						
-
-
-
-
-
-
 								
 						<!-- /tables -->
 
 
 
-
-
 					</ul>
 				</div>
-
 				<!-- /main navigation -->
 
 			</div>
@@ -490,111 +466,194 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
+			<!-- Page header -->
+			<div class="page-header page-header-light">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Actions</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
 
+					<div class="header-elements d-none">
+						<div class="d-flex justify-content-center">
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<a href="form_actions.html" class="breadcrumb-item">Forms</a>
+							<span class="breadcrumb-item active">Actions</span>
+						</div>
+
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none">
+						<div class="breadcrumb justify-content-center">
+							<a href="#" class="breadcrumb-elements-item">
+								<i class="icon-comment-discussion mr-2"></i>
+								Support
+							</a>
+
+							<div class="breadcrumb-elements-item dropdown p-0">
+								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-gear mr-2"></i>
+									Settings
+								</a>
+
+								<div class="dropdown-menu dropdown-menu-right">
+									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
 
 
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Vacaciones</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
 
 
-					<table class="table datatable-basic">
+
+									<div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Cancelar</button>
+										<button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</form>
+							</div>
+		                </div>
+		                <!-- /left aligned buttons -->
+					<table class="table datatable-show-all">
 						<thead>
 							<tr>
-								<th>Nombre del Empleado</th>
-								<th>Inicio de las vacaciones</th>
-								<th>Fin de las vacaciones</th>
-								<th>Area de trabajo</th>
-								<th>Fondos para las vaciones</th>
+								<th>Id Departamento </th>
+								<th>Nombre del Departamento </th>
+								<th>Numero de Empleados en el Departamento</th>
+								<th>Fecha de creacion del Departamento </th>
+								<th>Espacios Disponibles en el Departamento</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Marth</td>
-								<td>12/1/2019</td>
-								<td>12/2/2019</td>
-								<td>Tecnico</td>
-								<td>$9000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
+								<td>115</td>
+								<td>Elemennto</td>
+								<td>8</td>
+								<td>22 Jun 1972</td>
+								<td>2</td>
+									<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Borrar</button></td>
+									</div>
+																		<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Editar</button></td>
+									</div>
+								</form>
+							</div>
+		                </div>
 
-						</tbody>
+		                						<tbody>
+							<tr>
+								<td>116</td>
+								<td>Cartucho</td>
+								<td>7</td>
+								<td>24 Jun 1975</td>
+								<td>3</td>
+									<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Borrar</button></td>
+									</div>
+																		<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Editar</button></td>
+									</div>
+								</form>
+							</div>
+		                </div>
+
+		                						<tbody>
+							<tr>
+								<td>117</td>
+								<td>Primis</td>
+								<td>4</td>
+								<td>24 oct 2002</td>
+								<td>6</td>
+									<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Borrar</button></td>
+									</div>
+																		<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Editar</button></td>
+									</div>
+								</form>
+							</div>
+		                </div>
+
+		                						<tbody>
+							<tr>
+								<td>118</td>
+								<td>Ultimis</td>
+								<td>8</td>
+								<td>22 Jun 1972</td>
+								<td>2</td>
+									<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Borrar</button></td>
+									</div>
+																		<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Editar</button></td>
+									</div>
+								</form>
+							</div>
+		                </div>
+
+		                						<tbody>
+							<tr>
+								<td>119</td>
+								<td>Cttis</td>
+								<td>10</td>
+								<td>22 Jun 1977</td>
+								<td>0</td>
+									<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Borrar</button></td>
+									</div>
+																		<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Editar</button></td>
+									</div>
+								</form>
+							</div>
+		                </div>
 
 						<tbody>
 							<tr>
-								<td>Steve</td>
-								<td>24/2/2019</td>
-								<td>24/3/2019</td>
-								<td>Profesor</td>
-								<td>$10000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
-
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>Clarck</td>
-								<td>29/3/2019</td>
-								<td>29/4/2019</td>
-								<td>Tecnico</td>
-								<td>$12000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
-
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>Jane Romero</td>
-								<td>2/5/2019</td>
-								<td>3/6/2019</td>
-								<td>Maestra</td>
-								<td>$10000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
-
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>Bruce</td>
-								<td>7/7/2019</td>
-								<td>7/8/2019</td>
-								<td>Guardia</td>
-								<td>$14000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>	
+								<td>120</td>
+								<td>TAKEN</td>
+								<td>8</td>
+								<td>24 Jul 1987</td>
+								<td>2</td>
+									<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Borrar</button></td>
+									</div>
+																		<td><div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Editar</button></td>
+									</div>
+								</form>
+							</div>
+		                </div>
 
 
 
-						</tbody>
-					</table>
-				</div>
-				<!-- /basic datatable -->
-
-
-
-
-			<!-- /content area -->
-
-
-
+			<!-- /footer -->
 
 		</div>
-		<!-- /main content -->
+		<!-- /content wrapper -->
 
 	</div>
 	<!-- /page content -->

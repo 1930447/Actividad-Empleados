@@ -14,6 +14,8 @@
 	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+
+	<link href="../../../../global_assets/css/extras/animate.min.css" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
@@ -23,11 +25,10 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/extension_blockui.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -400,23 +401,9 @@
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
-						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menu</div> <i class="icon-menu" title="Main"></i></li>
-						<li class="nav-item">
-							<a href="index.html" class="nav-link active">
-								<i class="icon-home4"></i>
-								<span>
-									Graficas
-								</span>
-							</a>
-						</li>
 
 
-						<!-- /main -->						
-
-
-
-												<!-- Forms -->
+						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Departamentos</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Departamentos</span></a>
@@ -428,6 +415,9 @@
 							
 							</ul>
 						</li>
+						
+						<!-- /forms -->
+
 
 						<!-- Extensions -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Empresas</div> <i class="icon-menu" title="Extensions"></i></li>
@@ -439,9 +429,6 @@
 						</li>
 
 						<!-- /extensions -->
-
-
-
 
 						<!-- Tables -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Empleados </div> <i class="icon-menu" title="Tables"></i></li>
@@ -457,27 +444,13 @@
 								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Editar</a></li>
 								<li class="nav-item"><a href="datatable_styling.html" class="nav-link active">Vacaciones</a></li>
 
-
-
-
-
-						
-
-
-
-
-
-
 								
 						<!-- /tables -->
 
 
 
-
-
 					</ul>
 				</div>
-
 				<!-- /main navigation -->
 
 			</div>
@@ -496,10 +469,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
-				<div class="card">
+				<!-- Plugin overview -->
+				<div class="card mb-4">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Vacaciones</h5>
+						<h5 class="card-title">Empresas</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -509,87 +482,55 @@
 	                	</div>
 					</div>
 
+											<!-- /tables -->
+
+
 
 					<table class="table datatable-basic">
 						<thead>
 							<tr>
-								<th>Nombre del Empleado</th>
-								<th>Inicio de las vacaciones</th>
-								<th>Fin de las vacaciones</th>
-								<th>Area de trabajo</th>
-								<th>Fondos para las vaciones</th>
+								<th>Nombre de la empresa</th>
+								<th>Fundación</th>
+								<th>Sector</th>
+								<th>Servicio</th>
+								<th>Tamaño de la empresa</th>
+								<th>Finalidades</th>
+								<th>Cantidad de Empleados</th>
+								<th>Propietario</th>
+								<th>Fundador</th>
+								<th>Oficinas Centrales</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Marth</td>
-								<td>12/1/2019</td>
-								<td>12/2/2019</td>
-								<td>Tecnico</td>
-								<td>$9000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
+								<td>Nintendo</td>
+								<td>23/9/1889</td>
+								<td>Terciario</td>
+								<td>Entretenimiento</td>
+								<td>Grande</td>
+								<td>La finalidad es entregar entretenimiento de calidad a los usuarios por medio de diferentes fuentes de entretenimiento </td>
+								<td>5.944</td>
+								<td>Capital Group Companies, Autocartera y Bank of Kyoto</td>
+								<td>Fusajirō Yamauchi</td>
+								<td> Kioto, Prefectura de Kioto, Japón</td>
+							</tbody>
+							<tbody>								
+								<td>Disney</td>
+								<td>16/10/1923</td>
+								<td>Terciario</td>
+								<td>Entretenimiento</td>
+								<td>Grande</td>
+								<td>La finalidad es entregar entretenimiento de calidad a los usuarios por medio de entretenimiento visual principalmente dibujos animados</td>
+								<td>201,000</td>
+								<td>Laurene Powell Jobs, The Vanguard Group y State Street Global Advisors</td>
+								<td>Walt Disney, Roy O. Disney</td>
+								<td> Burbank, California, Estados Unidos</td>
+							</tbody>
 
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>Steve</td>
-								<td>24/2/2019</td>
-								<td>24/3/2019</td>
-								<td>Profesor</td>
-								<td>$10000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
-
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>Clarck</td>
-								<td>29/3/2019</td>
-								<td>29/4/2019</td>
-								<td>Tecnico</td>
-								<td>$12000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
-
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>Jane Romero</td>
-								<td>2/5/2019</td>
-								<td>3/6/2019</td>
-								<td>Maestra</td>
-								<td>$10000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
-
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>Bruce</td>
-								<td>7/7/2019</td>
-								<td>7/8/2019</td>
-								<td>Guardia</td>
-								<td>$14000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>	
-
-
-
-						</tbody>
-					</table>
-				</div>
-				<!-- /basic datatable -->
-
-
+			</div>
 
 
 			<!-- /content area -->
-
 
 
 

@@ -400,24 +400,10 @@
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
-						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menu</div> <i class="icon-menu" title="Main"></i></li>
-						<li class="nav-item">
-							<a href="index.html" class="nav-link active">
-								<i class="icon-home4"></i>
-								<span>
-									Graficas
-								</span>
-							</a>
-						</li>
 
-
-						<!-- /main -->						
-
-
-
-												<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Departamentos</div> <i class="icon-menu" title="Forms"></i></li>
+						<!-- Forms -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Departamentos
+                        </div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Departamentos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
@@ -441,7 +427,7 @@
 						<!-- /extensions -->
 
 
-
+					
 
 						<!-- Tables -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Empleados </div> <i class="icon-menu" title="Tables"></i></li>
@@ -456,8 +442,6 @@
 
 								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Editar</a></li>
 								<li class="nav-item"><a href="datatable_styling.html" class="nav-link active">Vacaciones</a></li>
-
-
 
 
 
@@ -477,7 +461,6 @@
 
 					</ul>
 				</div>
-
 				<!-- /main navigation -->
 
 			</div>
@@ -489,17 +472,28 @@
 
 		<!-- Main content -->
 		<div class="content-wrapper">
+			<!-- Page header -->
+			<div class="page-header page-header-light">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tabla</span> - Empleados</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
 
+					<div class="header-elements d-none">
+						<div class="d-flex justify-content-center">
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+						</div>
+					</div>
+				</div>
 
-
-
-			<!-- Content area -->
-			<div class="content">
-
+<div class="content">			
 				<!-- Basic datatable -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Vacaciones</h5>
+						<h5 class="card-title">Tabla de Empleados</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -508,96 +502,191 @@
 		                	</div>
 	                	</div>
 					</div>
-
-
-					<table class="table datatable-basic">
+					<table class="Tabla empleados">
 						<thead>
 							<tr>
-								<th>Nombre del Empleado</th>
-								<th>Inicio de las vacaciones</th>
-								<th>Fin de las vacaciones</th>
-								<th>Area de trabajo</th>
-								<th>Fondos para las vaciones</th>
+								<th> Nombre</th>
+								<th>Apellidos </th>
+								<th>Edad </th>
+								<th>Pais </th>
+								<th>Departamentos</th>
+								<th>Habilidades</th>
+								<th>Especialidad</th>
+								<th>Correo Electronico</th>
+
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Marth</td>
-								<td>12/1/2019</td>
-								<td>12/2/2019</td>
+								<td>Marco Antonio</td>
+								<td>Polo Avedul</td>
+								<td>28</td>
+								<td>Mexico</td>
+								<td>Maestros</td>
+								<td>conocimiento en instrumentos musicales</td>
+								<td>Musica</td>
+								<td>Marcoantonio@hotmail.com</td>
+							</tr>
+							<tr>
+								<td>Jack Frederick</td>
+								<td>Thompson </td>
+								<td>32</td>
+								<td>Estados Unidos </td>
 								<td>Tecnico</td>
-								<td>$9000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
-
-						</tbody>
-
-						<tbody>
+								<td>Conocimiento en sistemas de información</td>
+								<td>Programación</td>
+								<td>Jackfrederick@hotmail.com</td>
+								</td>
+							</tr>
 							<tr>
-								<td>Steve</td>
-								<td>24/2/2019</td>
-								<td>24/3/2019</td>
-								<td>Profesor</td>
-								<td>$10000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
-
-						</tbody>
-
-						<tbody>
+								<td>Claudete Avigil</td>
+								<td>Hernandez Guerrera </td>
+								<td>21</td>
+								<td>Australia</td>
+								<td>Medicina</td>
+								<td>Amplios conocimientos en sustancias curativas</td>
+								<td>Enfermeria</td>
+								<td>Claudeteavigail@hotmail.com</td>
+								</td>
+							</tr>
 							<tr>
-								<td>Clarck</td>
-								<td>29/3/2019</td>
-								<td>29/4/2019</td>
-								<td>Tecnico</td>
-								<td>$12000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
-
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>Jane Romero</td>
-								<td>2/5/2019</td>
-								<td>3/6/2019</td>
-								<td>Maestra</td>
-								<td>$10000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>
-
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>Bruce</td>
-								<td>7/7/2019</td>
-								<td>7/8/2019</td>
+								<td>Meg thomas</td>
+								<td>Conrado Vernales</td>
+								<td>24 </td>
+								<td>Estados Unidos</td>
+								<td>Seguridad</td>
+								<td>Conocimiento en defensa personal </td>
 								<td>Guardia</td>
-								<td>$14000</td>
-								<td><button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button></td>
-</tr>	
+								<td>Megthomas@hotmail.com</td>
+								</td>
+							</tr>
+							<tr>
+								<td>Ace Visconti </td>
+								<td>Barajas de la Cruz</td>
+								<td>32</td>
+								<td>Mexico</td>
+								<td>Tecnico</td>
+								<td>Conocimiento en electricidad </td>
+								<td>Electricista </td>
+								<td>Acevisconti@hotmail.com</td>
+								</td>
+							</tr>
+							<tr>
+								<td>David King</td>
+								<td>Zapata Ochoa</td>
+								<td>26</td>
+								<td>Rusia</td>
+								<td>Maestros</td>
+								<td>Conocimiento en entrenamiento y rutinas de ejercicio </td>
+								<td>Maestro de Educacion fisica </td>
+								<td>Davidking@hotmail.com</td>
+
+								</td>
+							</tr>
+							<tr>
+								<td>Bill </td>
+								<td>Overbleck</td>
+								<td>52</td>
+								<td>Estados Unidos</td>
+								<td> Seguridad </td>
+								<td>Entrenamiento Militar para defensa personal</td>
+								<td>Guardia</td>
+								<td>Billoverbleck@hotmail.com</td>
+								</td>
+							</tr>
+							<tr>
+								<td>Feng Ming </td>
+								<td>Koshiki Hakaigu</td>
+								<td>19</td>
+								<td>Japon </td>
+								<td>Maestros</td>
+								<td>Amplio conocimientos en sistemas informaticos</td>
+								<td>Maestro en informatica</td>
+								<td>Fengming@outlook.com</td>
+
+								</td>
+
+							</tr>
+
+
+				<!-- Form action components -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Registrar Empleados
+
+
+					</h6>
+
+
+				<div class="row">
+					<div class="col-md-4">
+			        	
+	                	<!-- Left aligned buttons -->
+			            <div class="card">
+							<div class="card-header header-elements-inline">
+				                <h6 class="card-title">Registrar nuevo empleado</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+			                <div class="card-body">
+			                	<form action="#">
+									<div class="form-group">
+										<label> Nombre :</label>
+										<input type="text" class="form-control" placeholder="Eugene Kopyov">
+									</div>
+
+									<div class="form-group">
+										<label>Apellidos:</label>
+										<input type="password" class="form-control" placeholder="Your strong password">
+									</div>
+
+									 <div class="form-group">
+										<label>Edad:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+									<div class="form-group">
+										<label>Pais:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+									<div class="form-group">
+										<label>Departamentos:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+									<div class="form-group">
+										<label>Habilidades:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+ 								    <div class="form-group">
+										<label>Especialidad:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+								     <div class="form-group">
+										<label>correo electronico:</label>
+										<textarea rows="3" cols="3" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+
+									<div class="d-flex justify-content-start align-items-center">
+										<button type="submit" class="btn btn-light">Cancelar</button>
+										<button type="submit" class="btn bg-blue ml-3">registrar <i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</form>
+							</div>
+		                </div>
+		                <!-- /left aligned buttons -->
 
 
 
-						</tbody>
-					</table>
-				</div>
-				<!-- /basic datatable -->
 
-
-
-
-			<!-- /content area -->
-
-
-
-
-		</div>
-		<!-- /main content -->
-
-	</div>
-	<!-- /page content -->
-
-</body>
 </html>
